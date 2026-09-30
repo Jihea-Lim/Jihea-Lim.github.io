@@ -99,16 +99,17 @@
   }
 
   function getFooterCopy() {
+    /*
     const bodyCopy = document.body.dataset.footerCopy;
     if (bodyCopy) {
       return bodyCopy;
     }
-
+  
     if (getCurrentPage() === 'photography') {
-      return '© 2026 Your Name. All photographs are original works.';
+      return '© 2026 Jihea Lim. All photographs are original works.';
     }
-
-    return '© 2026 Your Name';
+   */
+    return '© 2026 Jihea Lim · Adapted from <a href="https://github.com/Arvid-pku/Academic-Homepage-Template" target="_blank" rel="noopener">Arvid-pku</a>';
   }
 
   function getFooterClassName() {
