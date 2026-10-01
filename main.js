@@ -63,107 +63,58 @@ function populatePublications(publications, listId) {
   publications.forEach(pub => {
     const li = document.createElement('li');
 
+    // Title
     const titleDiv = document.createElement('div');
     titleDiv.className = 'papertitle';
-    titleDiv.innerHTML = (pub.isNew ? '<span class="new-badge">New</span>' : '') + pub.title;
+    titleDiv.innerHTML =
+      (pub.isNew ? '<span class="new-badge">New</span>' : '') + pub.title;
 
+    // Authors
     const restDiv = document.createElement('div');
     restDiv.className = 'paper_rest';
     restDiv.innerHTML = `${pub.authors}<br />`;
 
+    // Journal / Conference
     const venueSpan = document.createElement('span');
     venueSpan.className = 'paper-venue';
     venueSpan.innerHTML = `<i>${pub.venue}</i>`;
     restDiv.appendChild(venueSpan);
 
-    const linksWrapper = document.createElement('span');
-    linksWrapper.className = 'paper-links';
-    linksWrapper.appendChild(document.createTextNode('[ '));
+    // Paper links
+    if (pub.links && pub.links.length > 0) {
+      const linksWrapper = document.createElement('span');
+      linksWrapper.className = 'paper-links';
 
-    const linkElements = pub.links.map(link => {
-      const anchor = document.createElement('a');
-      anchor.href = link.url;
-      anchor.textContent = link.text;
-      if (/^https?:\/\//i.test(link.url)) {
-        anchor.target = '_blank';
-        anchor.rel = 'noopener';
-      }
-      return anchor;
-    });
+      linksWrapper.appendChild(document.createTextNode(' [ '));
 
-    const createDetailToggle = (label, contentValue, fallbackText, baseClass) => {
-      const container = document.createElement('div');
-      container.className = `${baseClass}-container detail-container`;
-
-      const toggle = document.createElement('button');
-      toggle.type = 'button';
-      toggle.className = `${baseClass}-toggle detail-toggle`;
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = label;
-
-      const content = document.createElement('div');
-      content.className = `${baseClass}-content detail-content`;
-      const hasContent = typeof contentValue === 'string' && contentValue.trim().length > 0;
-      content.innerHTML = hasContent ? contentValue : fallbackText;
-      content.hidden = true;
-      const contentId = `detail-content-${detailIdCounter++}`;
-      content.id = contentId;
-      content.setAttribute('role', 'region');
-      content.setAttribute('aria-label', `${pub.title} ${label.toLowerCase()}`);
-      toggle.setAttribute('aria-controls', contentId);
-
-      toggle.addEventListener('click', () => {
-        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-        if (!isExpanded) {
-          closeOtherDetails(toggle);
+      pub.links.forEach((link, index) => {
+        if (index > 0) {
+          linksWrapper.appendChild(document.createTextNode(' | '));
         }
-        const nextState = !isExpanded;
-        toggle.setAttribute('aria-expanded', String(nextState));
-        content.hidden = !nextState;
-        toggle.textContent = nextState ? `Hide ${label}` : label;
+
+        const anchor = document.createElement('a');
+        anchor.href = link.url;
+        anchor.textContent = link.text;
+
+        if (/^https?:\/\//i.test(link.url)) {
+          anchor.target = '_blank';
+          anchor.rel = 'noopener';
+        }
+
+        linksWrapper.appendChild(anchor);
       });
 
-      container.appendChild(content);
-      detailToggleRegistry.push({ toggle, content, label });
-      return { container, toggle };
-    };
-
-    const { container: abstractContainer, toggle: abstractToggle } =
-      createDetailToggle('Abstract', pub.abstract, 'Abstract coming soon.', 'abstract');
-    const { container: citationContainer, toggle: citationToggle } =
-      createDetailToggle('Citation', pub.citation, 'Citation coming soon.', 'citation');
-
-    const interactiveItems = [];
-    if (linkElements.length > 0) {
-      interactiveItems.push(linkElements[0]);
+      linksWrapper.appendChild(document.createTextNode(' ]'));
+      restDiv.appendChild(linksWrapper);
     }
-    interactiveItems.push(abstractToggle);
-    if (linkElements.length > 1) {
-      linkElements.slice(1).forEach(linkElement => {
-        interactiveItems.push(linkElement);
-      });
-    }
-    interactiveItems.push(citationToggle);
-
-    interactiveItems.forEach((item, index) => {
-      if (index > 0) {
-        linksWrapper.appendChild(document.createTextNode(' | '));
-      }
-      linksWrapper.appendChild(item);
-    });
-    linksWrapper.appendChild(document.createTextNode(' ]'));
-
-    restDiv.appendChild(document.createTextNode(' '));
-    restDiv.appendChild(linksWrapper);
 
     const bottomSpaceDiv = document.createElement('div');
     bottomSpaceDiv.className = 'paper_bottom_space';
 
     li.appendChild(titleDiv);
     li.appendChild(restDiv);
-    li.appendChild(abstractContainer);
-    li.appendChild(citationContainer);
     li.appendChild(bottomSpaceDiv);
+
     list.appendChild(li);
   });
 }
