@@ -35,8 +35,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.1007/s12239-025-00227-7" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: true,
     isPreprint: false,
     isSelected: true
@@ -50,8 +48,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.1007/s12239-024-00102-x" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: false,
     isPreprint: false,
     isSelected: true
@@ -65,8 +61,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.1007/s12206-023-0604-5" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: false,
     isPreprint: false,
     isSelected: true
@@ -80,8 +74,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.3390/app122312017" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: false,
     isPreprint: false,
     isSelected: true
@@ -95,8 +87,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.3390/app12094486" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: false,
     isPreprint: false,
     isSelected: true
@@ -110,8 +100,6 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.1007/s11554-021-01084-0" }
     ],
-    abstract: "",
-    citation: ``,
     isNew: false,
     isPreprint: false,
     isSelected: true
