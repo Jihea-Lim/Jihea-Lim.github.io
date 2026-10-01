@@ -18,9 +18,35 @@ function closeOtherDetails(activeToggle) {
 document.addEventListener('DOMContentLoaded', function() {
   // Homepage: single selected papers list (preprints + conference papers, both filtered to isSelected)
   if (document.getElementById('selected-papers-list')) {
-    const selected = [...getSelectedPreprints(), ...getSelectedPublications()];
-    populatePublications(selected, 'selected-papers-list');
+  const selected = [...getSelectedPreprints(), ...getSelectedPublications()];
+  const list = document.getElementById('selected-papers-list');
+  const toggleButton = document.getElementById('toggle-publications');
+
+  let expanded = false;
+
+  function renderHomepagePublications() {
+    list.innerHTML = '';
+
+    const papersToShow = expanded ? selected : selected.slice(0, 3);
+
+    populatePublications(papersToShow, 'selected-papers-list');
+
+    if (toggleButton) {
+      toggleButton.textContent = expanded
+        ? 'Show less ↑'
+        : 'View all publications ↓';
+    }
   }
+
+  renderHomepagePublications();
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
+      expanded = !expanded;
+      renderHomepagePublications();
+    });
+  }
+}
 
   // Full publications page (renders all preprints and all conference/journal papers)
   if (document.getElementById('preprints-list')) {
