@@ -403,8 +403,16 @@ a:focus, button:focus {
   background: none;
   border: none;
   padding: 0;
+  margin: 0;
   font: inherit;
+  color: var(--primary-color);
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#toggle-publications:hover {
+  color: var(--secondary-color);
 }
 
 /* Mobile */
