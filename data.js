@@ -35,7 +35,7 @@ const publications = [
     links: [
       { text: "Paper", url: "https://doi.org/10.1007/s12239-025-00227-7" }
     ],
-    isNew: true,
+    isNew: false,
     isPreprint: false,
     isSelected: true
   },
