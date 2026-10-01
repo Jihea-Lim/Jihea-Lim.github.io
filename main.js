@@ -89,7 +89,20 @@ function populatePublications(publications, listId) {
 
   publications.forEach(pub => {
     const li = document.createElement('li');
-
+    li.className = 'publication-item';
+    
+    if (pub.image) {
+      const image = document.createElement('img');
+      image.className = 'publication-image';
+      image.src = pub.image;
+      image.alt = pub.title;
+      image.loading = 'lazy';
+    
+      li.appendChild(image);
+    }
+    
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'publication-info';
     // Title
     const titleDiv = document.createElement('div');
     titleDiv.className = 'papertitle';
@@ -138,10 +151,11 @@ function populatePublications(publications, listId) {
     const bottomSpaceDiv = document.createElement('div');
     bottomSpaceDiv.className = 'paper_bottom_space';
 
-    li.appendChild(titleDiv);
-    li.appendChild(restDiv);
-    li.appendChild(bottomSpaceDiv);
-
+    infoDiv.appendChild(titleDiv);
+    infoDiv.appendChild(restDiv);
+    infoDiv.appendChild(bottomSpaceDiv);
+    
+    li.appendChild(infoDiv);
     list.appendChild(li);
   });
 }
