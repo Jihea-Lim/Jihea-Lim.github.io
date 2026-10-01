@@ -377,3 +377,46 @@ a:focus, button:focus {
     text-decoration: underline;
   }
 }
+
+/* Publication layout with thumbnail */
+.publication-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.publication-image {
+  width: 240px;
+  height: 150px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.publication-info {
+  flex: 1;
+  min-width: 0;
+}
+
+/* View all / Show less button */
+#toggle-publications {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .publication-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .publication-image {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+}
