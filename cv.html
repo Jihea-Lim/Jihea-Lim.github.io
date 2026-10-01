@@ -3,25 +3,32 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>CV - Your Name</title>
+
   <meta name="author" content="Your Name">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV of Your Name - education, research experience, publications, projects, honors, teaching, talks, and academic services.">
+  <meta name="description" content="CV of Your Name">
   <meta name="robots" content="index, follow">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="CV - Your Name">
-  <meta property="og:description" content="Education, research experience, publications, projects, honors, teaching, talks, and academic services.">
+  <meta property="og:description" content="Curriculum Vitae of Your Name">
   <meta property="og:image" content="https://yourwebsite.com/figures/me.jpg">
   <meta property="og:url" content="https://yourwebsite.com/cv.html">
   <meta property="og:type" content="profile">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="CV - Your Name">
-  <meta name="twitter:description" content="Education, research experience, publications, projects, honors, teaching, talks, and academic services.">
+  <meta name="twitter:description" content="Curriculum Vitae of Your Name">
   <meta name="twitter:image" content="https://yourwebsite.com/figures/me.jpg">
 
+  <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="shared-styles.css">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="figures/logo.png">
 
   <style>
@@ -45,11 +52,14 @@
       color: #374151;
     }
 
-    .cv-contact a { color: var(--primary-color); }
-    .cv-contact .sep { color: #9ca3af; margin: 0 8px; }
+    .cv-contact a {
+      color: var(--primary-color);
+    }
 
-    [data-theme="dark"] .cv-contact { color: var(--text-color); }
-    [data-theme="dark"] .cv-contact .sep { color: #888; }
+    .cv-contact .sep {
+      color: #9ca3af;
+      margin: 0 8px;
+    }
 
     .about-section {
       margin-bottom: 24px;
@@ -66,108 +76,137 @@
       border-bottom: 1px solid #e5e7eb;
     }
 
-    .about-page #research-experience-list,
-    .about-page #honors-list,
-    .about-page #teaching-list,
-    .about-page #talks-list,
-    .about-page #academic-services-list {
-      list-style: disc !important;
-      padding-left: 20px !important;
-      margin: 0 0 12px 0 !important;
+    .about-section ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
     }
 
-    .about-page li,
-    .about-section li,
-    .about-page .about-section li {
-      margin-bottom: 4px !important;
-      padding: 0 !important;
+    .about-section li {
+      margin-bottom: 4px;
+      padding: 0;
       color: #374151;
       line-height: 1.6;
     }
 
-    .about-page p,
-    .about-section p,
-    .about-section li p {
-      margin: 0 !important;
-      padding: 0 !important;
+    /* Dark mode */
+    [data-theme="dark"] .about-page h1 {
+      color: var(--text-color);
     }
 
-    /* Dark mode */
-    [data-theme="dark"] .about-page h1 { color: var(--text-color); }
+    [data-theme="dark"] .cv-contact {
+      color: var(--text-color);
+    }
+
+    [data-theme="dark"] .cv-contact .sep {
+      color: #888;
+    }
+
     [data-theme="dark"] .about-section h2 {
       color: var(--text-color);
       border-bottom-color: #374151;
     }
-    [data-theme="dark"] .about-section li,
-    [data-theme="dark"] .about-section li p { color: var(--text-color); }
 
+    [data-theme="dark"] .about-section li {
+      color: var(--text-color);
+    }
   </style>
+
 </head>
 
 <body>
+
+  <!-- Navigation -->
   <div id="site-nav"></div>
 
   <main id="main-content" class="about-page page-shell">
-    <h1>CV <a href="files/CV.pdf" class="cv-pdf-link" target="_blank" rel="noopener">[PDF]</a></h1>
+
+    <!-- CV -->
+    <h1>
+      CV
+      <a href="files/CV.pdf"
+         class="cv-pdf-link"
+         target="_blank"
+         rel="noopener">[PDF]</a>
+    </h1>
+
+    <!-- Contact -->
     <div class="cv-contact">
-      <a href="mailto:your.email@institution.edu">your.email@institution.edu</a><span class="sep">/</span>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a><span class="sep">/</span>
-      <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">Google Scholar</a><span class="sep">/</span>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a><span class="sep">/</span>
-      <a href="https://x.com/yourusername" target="_blank" rel="noopener">Twitter</a>
+
+      <a href="mailto:your.email@institution.edu">
+        your.email@institution.edu
+      </a>
+
+      <span class="sep">/</span>
+
+      <a href="https://github.com/yourusername"
+         target="_blank"
+         rel="noopener">
+        GitHub
+      </a>
+
+      <span class="sep">/</span>
+
+      <a href="https://scholar.google.com/citations?user=YOURID"
+         target="_blank"
+         rel="noopener">
+        Google Scholar
+      </a>
+
+      <span class="sep">/</span>
+
+      <a href="https://www.linkedin.com/in/yourprofile"
+         target="_blank"
+         rel="noopener">
+        LinkedIn
+      </a>
+
+      <span class="sep">/</span>
+
+      <a href="https://x.com/yourusername"
+         target="_blank"
+         rel="noopener">
+        Twitter
+      </a>
+
     </div>
 
+    <!-- Education -->
     <div class="about-section">
+
       <h2>Education</h2>
+
       <ul>
-        <li>Ph.D. in Your Field, <a href="https://yourinstitution.edu/">Your Institution</a>, YYYY &ndash; Present</li>
-        <li>M.S. in Your Field, <a href="https://previous-institution.edu/">Previous Institution</a>, YYYY &ndash; YYYY</li>
-        <li>B.S. in Your Field, <a href="https://previous-institution.edu/">Previous Institution</a>, YYYY &ndash; YYYY</li>
+        <li>
+          Ph.D. in Your Field,
+          <a href="https://yourinstitution.edu/">
+            Your Institution
+          </a>,
+          YYYY &ndash; Present
+        </li>
+
+        <li>
+          BEng in Your Field,
+          <a href="https://yourinstitution.edu/">
+            Your Institution
+          </a>,
+          YYYY &ndash; YYYY
+        </li>
       </ul>
-    </div>
 
-    <div class="about-section">
-      <h2>Selected Publications</h2>
-      <ul id="selected-papers-list" class="publication-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Selected Projects</h2>
-      <ul id="projects-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Research Experience</h2>
-      <ul id="research-experience-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Honors &amp; Awards</h2>
-      <ul id="honors-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Teaching</h2>
-      <ul id="teaching-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Talks</h2>
-      <ul id="talks-list"></ul>
-    </div>
-
-    <div class="about-section">
-      <h2>Academic Services</h2>
-      <ul id="academic-services-list"></ul>
     </div>
 
   </main>
 
+  <!-- Footer -->
   <div id="site-footer"></div>
 
+  <!-- Scripts -->
   <script src="site-shell.js"></script>
   <script src="utils.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+
 </body>
+
 </html>
