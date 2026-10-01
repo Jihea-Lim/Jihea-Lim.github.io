@@ -382,13 +382,13 @@ a:focus, button:focus {
 .publication-item {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 18px;
   margin-bottom: 28px;
 }
 
 .publication-image {
-  width: 240px;
-  height: 150px;
+  width: 190px;
+  height: 130px;
   object-fit: contain;
   flex-shrink: 0;
 }
