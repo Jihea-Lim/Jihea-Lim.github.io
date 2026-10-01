@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+    
   renderHomepagePublications();
 
   if (toggleButton) {
