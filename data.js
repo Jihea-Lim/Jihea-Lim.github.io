@@ -160,58 +160,59 @@ const fullPublications = getAllPublications();
 
 // Projects Data - Replace with your own projects
 
+
 const projects = [
   {
     title: "Reinforcement Learning-Based Broadband Active Noise Control",
-    description: "Doctoral Dissertation Research | Mar 2025 – Present<br>Developing a TD3-based recurrent policy for broadband active noise control, focusing on real-time adaptation to secondary path variations.",
+    description: "<b>Doctoral Dissertation Research</b> (Mar 2025 – Present)<br>Developing a TD3-based policy for broadband active noise control, focusing on real-time adaptation to secondary path variations.",
     badges: [],
     isSelected: true
   },
   {
     title: "Reinforcement Learning-Based Current Ripple Reduction in Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Mar 2024 – Aug 2026<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Mar 2024 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: true
   },
   {
     title: "Reinforcement Learning-Based Narrowband Active Noise Control",
-    description: "Research Lead · Academic Research | Feb 2024 – Mar 2025<br>Developed a Deep Q-Network (DQN)-based control algorithm for narrowband active noise control.",
+    description: "<b>Research Lead</b> · Academic Research (Feb 2024 – Mar 2025)<br>Developed a Deep Q-Network (DQN)-based control algorithm for narrowband active noise control.",
     badges: [],
     isSelected: true
   },
   {
     title: "Active Noise Masking for Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2026<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Noise Control for Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2024 – Feb 2025<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2024 – Feb 2025)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Reinforcement Learning-Based Leak Localization in Underground Water Pipelines",
-    description: "Research Lead · Academic Research | Jan 2024 – May 2024<br>Investigated the application of Deep Deterministic Policy Gradient (DDPG) to leak localization in underground water supply pipelines.",
+    description: "<b>Research Lead</b> · Academic Research (Jan 2024 – May 2024)<br>Investigated the application of Deep Deterministic Policy Gradient (DDPG) to leak localization in underground water supply pipelines.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Control for Traction Motor Switching Noise Reduction",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2024<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2024)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Control of Self-Excited Judder in Clutch Transmissions",
-    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Assistant</b> · Industry Collaboration with Hyundai Motor Company (Sep 2019 – May 2022)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Sound Control for Electric Vehicle Traction Motors",
-    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
+    description: "<b>Research Assistant</b> · Industry Collaboration with Hyundai Motor Company (Sep 2019 – May 2022)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   }
