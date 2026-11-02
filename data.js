@@ -169,7 +169,7 @@ const projects = [
   },
   {
     title: "Reinforcement Learning-Based Current Ripple Reduction in Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Mar 2024 – Aug 2026<br>Designed and developed an end-to-end DQN-based control framework for current ripple reduction in electric vehicle motor drives.",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Mar 2024 – Aug 2026<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: true
   },
@@ -181,13 +181,13 @@ const projects = [
   },
   {
     title: "Active Noise Masking for Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2026<br>Investigated real-time noise masking algorithms to improve sound quality inside electric vehicle cabins.",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2026<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Noise Control for Electric Vehicles",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2024 – Feb 2025<br>Developed an active noise control algorithm to reduce motor whine noise in electric vehicles.",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2024 – Feb 2025<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
@@ -199,19 +199,19 @@ const projects = [
   },
   {
     title: "Active Control for Traction Motor Switching Noise Reduction",
-    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2024<br>Investigated active control algorithms for reducing switching noise in electric vehicle traction motors.",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2024<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Control of Self-Excited Judder in Clutch Transmissions",
-    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Assisted in the development of active control algorithms for suppressing self-excited judder in dry dual-clutch transmissions.",
+    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Sound Control for Electric Vehicle Traction Motors",
-    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Assisted in the development of active sound control algorithms for electric vehicle traction motors.",
+    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Further details are not publicly disclosed due to confidentiality restrictions. <br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   }
