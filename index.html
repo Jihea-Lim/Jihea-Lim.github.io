@@ -1,354 +1,355 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Jihea Lim</title>
-  <meta name="author" content="Jihea Lim">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Jihea Lim - Your Title/Position. Brief description of your research interests and goals.">
-  <meta name="keywords" content="Jihea Lim, Your Institution, Your Research Areas">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph tags for social media -->
-  <meta property="og:title" content="Jihea Lim | Academic Website">
-  <meta property="og:description" content="Explore my CV, research, and academic achievements.">
-  <meta property="og:image" content="https://jihea-lim.github.io/figures/preview.png">
-  <meta property="og:url" content="https://jihea-lim.github.io/">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Your Name - Your Title">
-  <meta name="twitter:description" content="Your description here">
-  <meta name="twitter:image" content="https://yourwebsite.com/figures/me.jpg">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="shared-styles.css">
-  <link rel="icon" type="image/png" href="figures/logo.png">
-
-  <!-- Preload critical assets -->
-  <link rel="preload" href="figures/me.jpg" as="image">
-  <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font"
-    type="font/woff2" crossorigin>
-
-  <!-- DNS prefetch for external domains -->
-  <link rel="dns-prefetch" href="//fonts.gstatic.com">
-
-  <!-- Structured Data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Your Name",
-    "description": "Your description here",
-    "url": "https://yourwebsite.com/",
-    "image": "https://yourwebsite.com/figures/me.jpg",
-    "email": "your.email@institution.edu",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Your Institution",
-      "url": "https://www.yourinstitution.edu/"
-    },
-    "sameAs": [
-      "https://github.com/yourusername",
-      "https://www.linkedin.com/in/yourprofile",
-      "https://x.com/yourusername",
-      "https://scholar.google.com/citations?user=YOURID"
-    ]
-  }
-  </script>
-
-  <style>
-    /* Homepage-specific styles */
-    .profile-section {
-      display: flex;
-      align-items: flex-start;
-      gap: 32px;
-      margin-bottom: 32px;
-    }
-
-    .profile-text {
-      flex: 1;
-    }
-
-    .profile-text .name {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 2px;
-    }
-
-    .profile-text .pronunciation {
-      font-size: 13px;
-      color: #9ca3af;
-      margin-bottom: 16px;
-    }
-
-    .profile-text .bio {
-      font-size: 16px;
-      color: #374151;
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
-
-    .profile-text .bio a {
-      font-size: inherit;
-    }
-
-    .profile-links a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    .profile-links a:hover {
-      color: var(--secondary-color);
-    }
-
-    .profile-photo {
-      flex-shrink: 0;
-      width: 190px;
-      height: 220px;
-      object-fit: cover;
-      object-position: center;
-      margin-top: 55px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .homepage-section {
-      margin-bottom: 28px;
-    }
-
-    .homepage-section h2 {
-      font-size: 20px;
-      font-weight: 600;
-      color: #1a1a1a;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 12px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .news-list {
-      list-style: none !important;
-      padding-left: 0 !important;
-      margin: 0 !important;
-    }
-
-    .news-list li {
-      display: flex;
-      color: #374151;
-      line-height: 1.6;
-      margin-bottom: 4px !important;
-    }
-
-    .news-date {
-      font-weight: 600;
-      color: #1a1a1a;
-      width: 120px;
-      flex-shrink: 0;
-    }
-
-    [data-theme="dark"] .news-list li {
-      color: var(--text-color);
-    }
-
-    [data-theme="dark"] .news-date {
-      color: var(--text-color);
-    }
-
-
-    .homepage-section #projects-list li {
-      margin-bottom: 8px !important;
-    }
-
-    .homepage-section .publication-list {
-      list-style: none !important;
-      padding-left: 0 !important;
-    }
-
-    .homepage-section .publication-list li {
-      margin-bottom: 6px !important;
-      padding-bottom: 0 !important;
-    }
-
-
-
-    /* Dark mode overrides */
-    [data-theme="dark"] .profile-text .name {
-      color: var(--text-color);
-    }
-
-    [data-theme="dark"] .profile-text .pronunciation {
-      color: #888;
-    }
-
-    [data-theme="dark"] .profile-text .bio {
-      color: var(--text-color);
-    }
-
-    [data-theme="dark"] .profile-photo {
-      border-color: #374151;
-    }
-
-    [data-theme="dark"] .homepage-section h2 {
-      color: var(--text-color);
-      border-bottom-color: #374151;
-    }
-
-    [data-theme="dark"] .homepage-section .papertitle {
-      color: var(--text-color);
-    }
-
-    [data-theme="dark"] .homepage-section .paper_rest {
-      color: #b8b8b8;
-    }
-
-    [data-theme="dark"] .homepage-section .paper-venue {
-      color: #888;
-    }
-
-    /* Mobile */
-    @media screen and (max-width: 768px) {
-      .profile-section {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 16px;
-      }
-
-      .profile-text .name {
-        text-align: center;
-      }
-
-      .profile-text .pronunciation {
-        text-align: center;
-      }
-
-      .profile-links {
-        text-align: center;
-      }
-
-      .profile-photo {
-        margin-top: 0;
-      }
-
-    }
-
-      /* Unify all View all buttons */
-  .homepage-section .view-all,
-  .homepage-section button.view-all,
-  .homepage-section a.view-all {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 0;
-  
-      font-family: inherit;
-      font-size: 13px !important;
-      font-weight: 400 !important;
-      line-height: 1.5 !important;
-      letter-spacing: normal !important;
-  
-      color: var(--primary-color);
-      background: transparent !important;
-      border: none !important;
-      border-radius: 0;
-      box-shadow: none !important;
-      appearance: none;
-  
-      text-decoration: none;
-      cursor: pointer;
-  }
-  
-  .homepage-section .view-all:hover {
-      color: var(--secondary-color);
-      background: transparent;
-  }
-  
-  /* Hide collapsed controls correctly */
-  .homepage-section .view-all[hidden] {
-      display: none !important;
-  }
-  
-      .news-list li[hidden] {
-      display: none !important;
-  }
-  
- /* Match publication typography */
-#presentations-list strong,
-#projects-list strong {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
-    margin-bottom: 6px;
-}
-
-#presentations-list li,
-#projects-list li {
-    font-size: 14px;
-    color: #6b7280;
-    line-height: 1.4;
-}
-
-[data-theme="dark"] #presentations-list strong,
-[data-theme="dark"] #projects-list strong {
-    color: var(--text-color);
-}
-  </style>
-</head>
-
-<body>
-  <div id="site-nav"></div>
-
-  <main id="main-content" class="homepage page-shell">
-    <!-- Profile -->
-    <div class="profile-section">
-      <div class="profile-text">
-        <div class="name">Jihea Lim</div>
-        <!-- <div class="pronunciation">(Optional pronunciation guide)</div>-->
-        <p class="bio">
-          Hi! I am a PhD student at Incheon Nation University, supervised by
-          Prof.Gwanggil Jeon and Prof.Young-Sup Lee. I received my BEng degree in Embedded Systems Engineering from Incheon Nation University, where I am currently pursuing my PhD degree.<br>
-          My research focuses on learning-based active noise control (ANC)
-          using reinforcement learning (RL) and deep learning (DL), particularly
-          ANC agents that learn through interaction with the physical world.<br>
-          
-        </p>  
-          
-        <p class="bio">
-          Feel free to reach out to me if you'd like to discuss research or explore potential collaboration!
-        </p>
-        <div class="profile-links">
-          <a href="mailto:JHLL@inu.ac.kr">Email</a> /
-          <a href="https://github.com/Jihea-Lim">Github</a> /
-          <a href="https://www.linkedin.com/in/jihea-lim">LinkedIn</a> /
-          <!-- <a href="https://x.com/yourusername">Twitter</a> / -->
-          <!-- <a href="files/CV.pdf">CV</a> / -->
-          <a href="https://scholar.google.com/citations?user=2_g5qwsAAAAJ&hl=en">Google Scholar</a>
-        </div>
-      </div>
-      <img class="profile-photo" alt="Jihea Lim" src="figures/me.jpg" loading="eager" width="160" height="160">
-    </div>
-
-    <!-- News -->
-    <div class="homepage-section">
-      <h2>News</h2>
+    <!DOCTYPE HTML>
+    <html lang="en">
     
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Jihea Lim</title>
+      <meta name="author" content="Jihea Lim">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description"
+        content="Jihea Lim - Your Title/Position. Brief description of your research interests and goals.">
+      <meta name="keywords" content="Jihea Lim, Your Institution, Your Research Areas">
+      <meta name="robots" content="index, follow">
+    
+      <!-- Open Graph tags for social media -->
+      <meta property="og:title" content="Jihea Lim | Academic Website">
+      <meta property="og:description" content="Explore my CV, research, and academic achievements.">
+      <meta property="og:image" content="https://jihea-lim.github.io/figures/preview.png">
+      <meta property="og:url" content="https://jihea-lim.github.io/">
+      <meta property="og:type" content="website">
+    
+      <!-- Twitter Card tags -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="Your Name - Your Title">
+      <meta name="twitter:description" content="Your description here">
+      <meta name="twitter:image" content="https://yourwebsite.com/figures/me.jpg">
+    
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <link rel="stylesheet" type="text/css" href="shared-styles.css">
+      <link rel="icon" type="image/png" href="figures/logo.png">
+    
+      <!-- Preload critical assets -->
+      <link rel="preload" href="figures/me.jpg" as="image">
+      <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font"
+        type="font/woff2" crossorigin>
+    
+      <!-- DNS prefetch for external domains -->
+      <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+      <!-- Structured Data for SEO -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "description": "Your description here",
+        "url": "https://yourwebsite.com/",
+        "image": "https://yourwebsite.com/figures/me.jpg",
+        "email": "your.email@institution.edu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Your Institution",
+          "url": "https://www.yourinstitution.edu/"
+        },
+        "sameAs": [
+          "https://github.com/yourusername",
+          "https://www.linkedin.com/in/yourprofile",
+          "https://x.com/yourusername",
+          "https://scholar.google.com/citations?user=YOURID"
+        ]
+      }
+      </script>
+    
+      <style>
+        /* Homepage-specific styles */
+        .profile-section {
+          display: flex;
+          align-items: flex-start;
+          gap: 32px;
+          margin-bottom: 32px;
+        }
+    
+        .profile-text {
+          flex: 1;
+        }
+    
+        .profile-text .name {
+          font-size: 28px;
+          font-weight: 700;
+          color: #1a1a1a;
+          margin-bottom: 2px;
+        }
+    
+        .profile-text .pronunciation {
+          font-size: 13px;
+          color: #9ca3af;
+          margin-bottom: 16px;
+        }
+    
+        .profile-text .bio {
+          font-size: 16px;
+          color: #374151;
+          line-height: 1.7;
+          margin-bottom: 16px;
+        }
+    
+        .profile-text .bio a {
+          font-size: inherit;
+        }
+    
+        .profile-links a {
+          color: var(--primary-color);
+          text-decoration: none;
+        }
+    
+        .profile-links a:hover {
+          color: var(--secondary-color);
+        }
+    
+        .profile-photo {
+          flex-shrink: 0;
+          width: 190px;
+          height: 220px;
+          object-fit: cover;
+          object-position: center;
+          margin-top: 55px;
+          border: 1px solid #e5e7eb;
+        }
+    
+        .homepage-section {
+          margin-bottom: 28px;
+        }
+    
+        .homepage-section h2 {
+          font-size: 20px;
+          font-weight: 600;
+          color: #1a1a1a;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          margin-bottom: 12px;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #e5e7eb;
+        }
+    
+        .news-list {
+          list-style: none !important;
+          padding-left: 0 !important;
+          margin: 0 !important;
+        }
+    
+        .news-list li {
+          display: flex;
+          color: #374151;
+          line-height: 1.6;
+          margin-bottom: 4px !important;
+        }
+    
+        .news-date {
+          font-weight: 600;
+          color: #1a1a1a;
+          width: 120px;
+          flex-shrink: 0;
+        }
+    
+        [data-theme="dark"] .news-list li {
+          color: var(--text-color);
+        }
+    
+        [data-theme="dark"] .news-date {
+          color: var(--text-color);
+        }
+    
+    
+        .homepage-section #projects-list li {
+          margin-bottom: 8px !important;
+        }
+    
+        .homepage-section .publication-list {
+          list-style: none !important;
+          padding-left: 0 !important;
+        }
+    
+        .homepage-section .publication-list li {
+          margin-bottom: 6px !important;
+          padding-bottom: 0 !important;
+        }
+    
+    
+    
+        /* Dark mode overrides */
+        [data-theme="dark"] .profile-text .name {
+          color: var(--text-color);
+        }
+    
+        [data-theme="dark"] .profile-text .pronunciation {
+          color: #888;
+        }
+    
+        [data-theme="dark"] .profile-text .bio {
+          color: var(--text-color);
+        }
+    
+        [data-theme="dark"] .profile-photo {
+          border-color: #374151;
+        }
+    
+        [data-theme="dark"] .homepage-section h2 {
+          color: var(--text-color);
+          border-bottom-color: #374151;
+        }
+    
+        [data-theme="dark"] .homepage-section .papertitle {
+          color: var(--text-color);
+        }
+    
+        [data-theme="dark"] .homepage-section .paper_rest {
+          color: #b8b8b8;
+        }
+    
+        [data-theme="dark"] .homepage-section .paper-venue {
+          color: #888;
+        }
+    
+        /* Mobile */
+        @media screen and (max-width: 768px) {
+          .profile-section {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 16px;
+          }
+    
+          .profile-text .name {
+            text-align: center;
+          }
+    
+          .profile-text .pronunciation {
+            text-align: center;
+          }
+    
+          .profile-links {
+            text-align: center;
+          }
+    
+          .profile-photo {
+            margin-top: 0;
+          }
+    
+        }
+    
+          /* Unify all View all buttons */
+      .homepage-section .view-all,
+      .homepage-section button.view-all,
+      .homepage-section a.view-all {
+          display: inline-block;
+          margin-top: 8px;
+          padding: 0;
       
+          font-family: inherit;
+          font-size: 13px !important;
+          font-weight: 400 !important;
+          line-height: 1.5 !important;
+          letter-spacing: normal !important;
+      
+          color: var(--primary-color);
+          background: transparent !important;
+          border: none !important;
+          border-radius: 0;
+          box-shadow: none !important;
+          appearance: none;
+      
+          text-decoration: none;
+          cursor: pointer;
+      }
+      
+      .homepage-section .view-all:hover {
+          color: var(--secondary-color);
+          background: transparent;
+      }
+      
+      /* Hide collapsed controls correctly */
+      .homepage-section .view-all[hidden] {
+          display: none !important;
+      }
+      
+          .news-list li[hidden] {
+          display: none !important;
+      }
+      
+     /* Match publication typography */
+    #presentations-list strong,
+    #projects-list strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 6px;
+    }
+    
+    #presentations-list li,
+    #projects-list li {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.4;
+    }
+    
+    [data-theme="dark"] #presentations-list strong,
+    [data-theme="dark"] #projects-list strong {
+        color: var(--text-color);
+    }
+      </style>
+    </head>
+    
+    <body>
+      <div id="site-nav"></div>
+    
+      <main id="main-content" class="homepage page-shell">
+        <!-- Profile -->
+        <div class="profile-section">
+          <div class="profile-text">
+            <div class="name">Jihea Lim</div>
+            <!-- <div class="pronunciation">(Optional pronunciation guide)</div>-->
+            <p class="bio">
+              Hi! I am a PhD student at Incheon Nation University, supervised by
+              Prof.Gwanggil Jeon and Prof.Young-Sup Lee. I received my BEng degree in Embedded Systems Engineering from Incheon Nation University, where I am currently pursuing my PhD degree.<br>
+              My research focuses on learning-based active noise control (ANC)
+              using reinforcement learning (RL) and deep learning (DL), particularly
+              ANC agents that learn through interaction with the physical world.<br>
+              
+            </p>  
+              
+            <p class="bio">
+              Feel free to reach out to me if you'd like to discuss research or explore potential collaboration!
+            </p>
+            <div class="profile-links">
+              <a href="mailto:JHLL@inu.ac.kr">Email</a> /
+              <a href="https://github.com/Jihea-Lim">Github</a> /
+              <a href="https://www.linkedin.com/in/jihea-lim">LinkedIn</a> /
+              <!-- <a href="https://x.com/yourusername">Twitter</a> / -->
+              <!-- <a href="files/CV.pdf">CV</a> / -->
+              <a href="https://scholar.google.com/citations?user=2_g5qwsAAAAJ&hl=en">Google Scholar</a>
+            </div>
+          </div>
+          <img class="profile-photo" alt="Jihea Lim" src="figures/me.jpg" loading="eager" width="160" height="160">
+        </div>
+    
+        <!-- News -->
+        <div class="homepage-section">
+          <h2>News</h2>
+        
+          
+        
     <ul id="news-list" class="news-list">
       <li>
         <span class="news-date">Nov 2026</span>
-        <span>Will serve as conference staff at the KSNVE Autumn Annual Conference (Nov 25–27).</span>
+        <span>Will serve as conference staff at the KSNVE Autumn Annual Conference (Nov 25–27, 2026).</span>
       </li>
       <li>
         <span class="news-date">Oct 2026</span>
         <span>Attended the KSNVE Mobility Sound Environment Control and Standardization Seminar.</span>
       </li>
       <li>
-        <span class="news-date">Mar 2019 – Aug 2026</span>
-        <span>Teaching Assistant, Department of Embedded Systems Engineering, INU.</span>
+        <span class="news-date">Aug 2026</span>
+        <span>Teaching Assistant, Embedded Systems Engineering, INU (Mar 2019 – Aug 2026).</span>
       </li>
       <li>
         <span class="news-date">Jul 2021</span>
@@ -366,20 +367,20 @@
         <span class="news-date">Jun 2019</span>
         <span>LG Electronics Award of Interest, IEIE Summer Annual Conference.</span>
       </li>
-      
+      <li>
+        <span class="news-date">Jan 2019</span>
+        <span>Founder, WCL — Embedded Systems and Control Applications (Sep 2018 – Jan 2019).</span>
+      </li>
       <li>
         <span class="news-date">Nov 2018</span>
         <span>Grand Prize (Minister of Trade, Industry and Energy Award), Creative Engineering Design Competition.</span>
       </li>
       <li>
-        <span class="news-date">Sep 2018 – Jan 2019</span>
-        <span>Founder, WCL — Embedded Systems and Control Applications.</span>
-      </li>
-      <li>
-        <span class="news-date">Mar – Jun 2018</span>
-        <span>Coding Mentor, Be a Coding Hero (Microsoft Korea).</span>
+        <span class="news-date">Jun 2018</span>
+        <span>Coding Mentor, Be a Coding Hero (Microsoft Korea; Mar – Jun 2018).</span>
       </li>
     </ul>
+
 
     
       <button id="toggle-news" class="view-all" type="button" aria-expanded="false">
