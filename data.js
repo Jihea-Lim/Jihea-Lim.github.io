@@ -27,6 +27,39 @@ const publications = [
 */
 const publications = [
 
+    // Under Review
+  {
+    title: "Active Control of Outgoing Noise through a Room Opening",
+    authors: "<b>Jihea Lim</b>, Young-Sup Lee",
+    venue: "Journal of Institute of Control, Robotics and Systems (Under Review)",
+    links: [],
+    isNew: false,
+    isPreprint: false,
+    isSelected: true
+  },
+
+      // Under Review
+  {
+    title: "Asynchronous Distributed Learning and Control Architecture for Real-Time Reinforcement Learning-Based Active Noise Control",
+    authors: "<b>Jihea Lim</b>, Gwanggil Jeon",
+    venue: "International Journal of Ad Hoc and Ubiquitous Computing (Under Review)",
+    links: [],
+    isNew: false,
+    isPreprint: false,
+    isSelected: true
+  },
+
+
+  {
+    title: "A Feasibility Study of Deep Reinforcement Learning for Current Ripple Reduction in a Motor Drive System of an Electric Vehicle",
+    authors: "Jeongwoo Kim, <b>Jihea Lim</b>, Yohan Cho, Young-Sup Lee",
+    venue: "Expert Systems (Under Review)",
+    links: [],
+    isNew: false,
+    isPreprint: false,
+    isSelected: true
+  },
+  
   // 2025
   {
     title: "A Hybrid Active Noise Cancellation Algorithm for Suppressing Narrowband Noise with Rapidly Changing Frequencies",
@@ -224,4 +257,43 @@ const talks = [
 // Honors Data - Replace with your own honors and awards
 const honors = [
   "Your Award Name, Institution, Month YYYY"
+];
+
+// Conference Presentations
+const presentations = [
+  {
+    title: "Active Noise Control Using Reinforcement Learning",
+    authors: "Young-Sup Lee, <b>Jihea Lim</b>",
+    venue: "2024 Fall Conference of the Acoustical Society of Korea",
+    location: "Busan, South Korea",
+    year: 2024
+  },
+  {
+    title: "Leak Locating of Underground Water Supply Pipelines Using Reinforcement Learning - DDPG",
+    authors: "Young-Sup Lee, <b>Jihea Lim</b>",
+    venue: "20th World Conference on Non-Destructive Testing (WCNDT)",
+    location: "Incheon, South Korea",
+    year: 2024
+  },
+  {
+    title: "Active Road Noise Control Inside a Vehicle Cabin Using an Electronic Sound Generator Mounted on the Cowl Panel",
+    authors: "Young-Sup Lee, <b>Jihea Lim</b>, Jeongwoo Kim",
+    venue: "2023 Fall Conference of the Korean Society for Noise and Vibration Engineering (KSNVE)",
+    location: "Yeosu, South Korea",
+    year: 2023
+  },
+  {
+    title: "Implementation of an Active Vibration Control System to Suppress the Transmitted Traction Motor Vibration for Reducing the Motor Whine Noise in an Electric Car Cabin",
+    authors: "Seokhoon Ryu, <b>Jihea Lim</b>, Young-Sup Lee, Myunggyu Kim",
+    venue: "International Congress on Acoustics (ICA 2022)",
+    location: "Gyeongju, South Korea",
+    year: 2022
+  },
+  {
+    title: "Active Control of Self-Excited Judder in a Dry Dual-Clutch Transmission",
+    authors: "<b>Jihea Lim</b>, Seokhoon Ryu, Young-Sup Lee, Jangwon Lee, Chang Kook Chae",
+    venue: "International Congress on Acoustics (ICA 2022)",
+    location: "Gyeongju, South Korea",
+    year: 2022
+  }
 ];
