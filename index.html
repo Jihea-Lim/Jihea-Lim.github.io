@@ -274,41 +274,39 @@
       .news-list li[hidden] {
       display: none !important;
   }
-
-
-    /* Publications, Presentations, Research Experience */
-  .homepage-section .publication-list,
+  
+  /* Match Publications typography exactly */
   .homepage-section #presentations-list,
   .homepage-section #projects-list {
-      font-size: 13px;
-      color: #6b7280;
-      line-height: 1.6;
+      font-size: inherit;
+      color: inherit;
+      line-height: inherit;
   }
   
-  /* Individual entries */
-  .homepage-section .publication-list li,
   .homepage-section #presentations-list li,
   .homepage-section #projects-list li {
-      font-size: 13px !important;
-      color: #6b7280;
-      line-height: 1.6;
+      font-size: inherit;
+      color: inherit;
+      line-height: inherit;
   }
   
-  /* Titles */
   .homepage-section #presentations-list strong,
   .homepage-section #projects-list strong {
-      font-size: 13px;
-      font-weight: 600;
-      color: #6b7280;
+      display: block;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      margin-bottom: 6px;
   }
   
-  /* Dark mode */
-  [data-theme="dark"] .homepage-section #presentations-list,
-  [data-theme="dark"] .homepage-section #projects-list,
-  [data-theme="dark"] .homepage-section #presentations-list li,
-  [data-theme="dark"] .homepage-section #projects-list li {
-      color: #b8b8b8;
+  .homepage-section #presentations-list i {
+      color: #9ca3af;
   }
+  
+  [data-theme="dark"] .homepage-section #presentations-list i {
+      color: #888;
+  }
+ 
   </style>
 </head>
 
