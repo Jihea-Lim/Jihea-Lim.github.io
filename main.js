@@ -58,7 +58,64 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Other sections (used on homepage or other pages if present)
-  populateProjects(false);
+  // populateProjects(false);
+  // Homepage Projects toggle
+if (document.getElementById('projects-list')) {
+  const list = document.getElementById('projects-list');
+  const toggleButton = document.getElementById('toggle-projects');
+
+  let expanded = false;
+
+  function renderHomepageProjects() {
+    list.innerHTML = '';
+
+    const projectsToShow = expanded
+      ? getAllProjects()
+      : getSelectedProjects();
+
+    projectsToShow.forEach(project => {
+      const li = document.createElement('li');
+
+      const badges = expanded
+        ? (project.badges || [])
+        : (project.badges || []).filter(b =>
+            b.img.includes('/github/stars/')
+          );
+
+      const badgeHtml = badges.map(badge =>
+        `<a href="${badge.url}" target="_blank" rel="noopener">
+          <img alt="badge" src="${badge.img}" loading="lazy"
+               style="vertical-align:middle;" />
+        </a>`
+      ).join(' ');
+
+      li.innerHTML = `
+        <strong>${project.title}</strong> ${badgeHtml}
+        <br>${project.description}
+      `;
+
+      list.appendChild(li);
+    });
+
+    if (toggleButton) {
+      toggleButton.textContent = expanded
+        ? 'Show less ↑'
+        : 'View all projects ↓';
+
+      toggleButton.setAttribute('aria-expanded', String(expanded));
+    }
+  }
+
+  renderHomepageProjects();
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
+      expanded = !expanded;
+      renderHomepageProjects();
+    });
+  }
+}
+  
   populateResearchExperience();
   populateAcademicServices();
   populateTeaching();
