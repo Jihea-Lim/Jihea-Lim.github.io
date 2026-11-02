@@ -136,7 +136,7 @@ if (document.getElementById('projects-list')) {
     if (toggleButton) {
       toggleButton.textContent = expanded
         ? 'Show less ↑'
-        : 'View all projects ↓';
+        : 'View all research experience ↓';
 
       toggleButton.setAttribute('aria-expanded', String(expanded));
     }
