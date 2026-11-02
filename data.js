@@ -126,21 +126,68 @@ const selectedPublications = getSelectedPublications();
 const fullPublications = getAllPublications();
 
 // Projects Data - Replace with your own projects
+
 const projects = [
   {
-    title: "Gödel Agent",
-    description: "A self-referential agent framework for recursive self-improvement implemented with Monkey Patching. (<a href=\"https://github.com/Arvid-pku/Godel_Agent\" target=\"_blank\" rel=\"noopener\">Project Homepage</a>)",
-    badges: [
-      { url: "https://github.com/Arvid-pku/Godel_Agent/releases", img: "https://img.shields.io/badge/Version-1.0-blue" },
-      { url: "https://github.com/Arvid-pku/Godel_Agent/blob/main/LICENSE.md", img: "https://img.shields.io/badge/License-MIT-blue" },
-      { url: "https://github.com/Arvid-pku/Godel_Agent/stargazers", img: "https://img.shields.io/github/stars/Arvid-pku/Godel_Agent" },
-      { url: "https://github.com/Arvid-pku/Godel_Agent/network/members", img: "https://img.shields.io/github/forks/Arvid-pku/Godel_Agent" },
-      { url: "https://arxiv.org/abs/2410.04444", img: "https://img.shields.io/badge/Doc-Paper-red" }
-    ],
-    isSelected: true,
-    demoPath: "photos/project-demo/godel-agent.png"
+    title: "Reinforcement Learning-Based Broadband Active Noise Control",
+    description: "Doctoral Dissertation Research | Mar 2025 – Present<br>Developing a TD3-based recurrent policy for broadband active noise control, focusing on real-time adaptation to secondary path variations.",
+    badges: [],
+    isSelected: true
+  },
+  {
+    title: "Reinforcement Learning-Based Current Ripple Reduction in Electric Vehicles",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Mar 2024 – Aug 2026<br>Designed and developed an end-to-end DQN-based control framework for current ripple reduction in electric vehicle motor drives.",
+    badges: [],
+    isSelected: true
+  },
+  {
+    title: "Reinforcement Learning-Based Narrowband Active Noise Control",
+    description: "Research Lead · Academic Research | Feb 2024 – Mar 2025<br>Developed a Deep Q-Network (DQN)-based control algorithm for narrowband active noise control.",
+    badges: [],
+    isSelected: true
+  },
+  {
+    title: "Active Noise Masking for Electric Vehicles",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2026<br>Investigated real-time noise masking algorithms to improve sound quality inside electric vehicle cabins.",
+    badges: [],
+    isSelected: false
+  },
+  {
+    title: "Active Noise Control for Electric Vehicles",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2024 – Feb 2025<br>Developed an active noise control algorithm to reduce motor whine noise in electric vehicles.",
+    badges: [],
+    isSelected: false
+  },
+  {
+    title: "Reinforcement Learning-Based Leak Localization in Underground Water Pipelines",
+    description: "Research Lead · Academic Research | Jan 2024 – May 2024<br>Investigated the application of Deep Deterministic Policy Gradient (DDPG) to leak localization in underground water supply pipelines.",
+    badges: [],
+    isSelected: false
+  },
+  {
+    title: "Active Control for Traction Motor Switching Noise Reduction",
+    description: "Research Lead · Industry Collaboration with Hyundai Motor Company | Feb 2023 – Aug 2024<br>Investigated active control algorithms for reducing switching noise in electric vehicle traction motors.",
+    badges: [],
+    isSelected: false
+  },
+  {
+    title: "Active Control of Self-Excited Judder in Clutch Transmissions",
+    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Assisted in the development of active control algorithms for suppressing self-excited judder in dry dual-clutch transmissions.",
+    badges: [],
+    isSelected: false
+  },
+  {
+    title: "Active Sound Control for Electric Vehicle Traction Motors",
+    description: "Research Assistant · Industry Collaboration with Hyundai Motor Company | Sep 2019 – May 2022<br>Assisted in the development of active sound control algorithms for electric vehicle traction motors.",
+    badges: [],
+    isSelected: false
   }
 ];
+
+// Helper functions to filter projects
+const getSelectedProjects = () => projects.filter(project => project.isSelected);
+const getAllProjects = () => projects;
+
 
 // Helper functions to filter projects
 const getSelectedProjects = () => projects.filter(project => project.isSelected);
