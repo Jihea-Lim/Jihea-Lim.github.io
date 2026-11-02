@@ -12,11 +12,11 @@
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph tags for social media -->
-  <meta property="og:title" content="Jihea Lim - Your Title">
-  <meta property="og:description" content="Your description here">
-  <meta property="og:image" content="https://yourwebsite.com/figures/me.jpg">
-  <meta property="og:url" content="https://yourwebsite.com/">
-  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jihea Lim | Academic Website">
+  <meta property="og:description" content="Explore my CV, research, and academic achievements.">
+  <meta property="og:image" content="https://jihea-lim.github.io/figures/preview.png">
+  <meta property="og:url" content="https://jihea-lim.github.io/">
+  <meta property="og:type" content="website">
 
   <!-- Twitter Card tags -->
   <meta name="twitter:card" content="summary">
@@ -175,31 +175,6 @@
     }
 
 
-    .homepage-section .view-all {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 0;
-      border: none;
-      border-radius: 0;
-      background: transparent;
-      box-shadow: none;
-      appearance: none;
-      -webkit-appearance: none;
-    
-      font-family: inherit;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 1.5;
-      letter-spacing: normal;
-      color: var(--primary-color);
-      text-decoration: none;
-      cursor: pointer;
-    }
-    
-    .homepage-section .view-all:hover {
-      color: var(--secondary-color);
-      background: transparent;
-    }
 
     /* Dark mode overrides */
     [data-theme="dark"] .profile-text .name {
@@ -260,6 +235,46 @@
       }
 
     }
+
+    /* Unify all View all buttons */
+.homepage-section .view-all,
+.homepage-section button.view-all,
+.homepage-section a.view-all {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0;
+
+    font-family: inherit;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    letter-spacing: normal !important;
+
+    color: var(--primary-color);
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0;
+    box-shadow: none !important;
+    appearance: none;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.homepage-section .view-all:hover {
+    color: var(--secondary-color);
+    background: transparent;
+}
+
+/* Hide collapsed controls correctly */
+.homepage-section .view-all[hidden] {
+    display: none !important;
+}
+
+    .news-list li[hidden] {
+    display: none !important;
+}
+    
   </style>
 </head>
 
