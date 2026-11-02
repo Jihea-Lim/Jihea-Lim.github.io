@@ -236,45 +236,79 @@
 
     }
 
-    /* Unify all View all buttons */
-.homepage-section .view-all,
-.homepage-section button.view-all,
-.homepage-section a.view-all {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 0;
+      /* Unify all View all buttons */
+  .homepage-section .view-all,
+  .homepage-section button.view-all,
+  .homepage-section a.view-all {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 0;
+  
+      font-family: inherit;
+      font-size: 13px !important;
+      font-weight: 400 !important;
+      line-height: 1.5 !important;
+      letter-spacing: normal !important;
+  
+      color: var(--primary-color);
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0;
+      box-shadow: none !important;
+      appearance: none;
+  
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .homepage-section .view-all:hover {
+      color: var(--secondary-color);
+      background: transparent;
+  }
+  
+  /* Hide collapsed controls correctly */
+  .homepage-section .view-all[hidden] {
+      display: none !important;
+  }
+  
+      .news-list li[hidden] {
+      display: none !important;
+  }
 
-    font-family: inherit;
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-    letter-spacing: normal !important;
 
-    color: var(--primary-color);
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0;
-    box-shadow: none !important;
-    appearance: none;
-
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.homepage-section .view-all:hover {
-    color: var(--secondary-color);
-    background: transparent;
-}
-
-/* Hide collapsed controls correctly */
-.homepage-section .view-all[hidden] {
-    display: none !important;
-}
-
-    .news-list li[hidden] {
-    display: none !important;
-}
-    
+    /* Publications, Presentations, Research Experience */
+  .homepage-section .publication-list,
+  .homepage-section #presentations-list,
+  .homepage-section #projects-list {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+  }
+  
+  /* Individual entries */
+  .homepage-section .publication-list li,
+  .homepage-section #presentations-list li,
+  .homepage-section #projects-list li {
+      font-size: 13px !important;
+      color: #6b7280;
+      line-height: 1.6;
+  }
+  
+  /* Titles */
+  .homepage-section #presentations-list strong,
+  .homepage-section #projects-list strong {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6b7280;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] .homepage-section #presentations-list,
+  [data-theme="dark"] .homepage-section #projects-list,
+  [data-theme="dark"] .homepage-section #presentations-list li,
+  [data-theme="dark"] .homepage-section #projects-list li {
+      color: #b8b8b8;
+  }
   </style>
 </head>
 
