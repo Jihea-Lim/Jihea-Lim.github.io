@@ -121,7 +121,7 @@
     }
 
     .homepage-section h2 {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 600;
       color: #1a1a1a;
       text-transform: uppercase;
@@ -175,22 +175,30 @@
     }
 
 
-   .view-all {
+    .homepage-section .view-all {
       display: inline-block;
       margin-top: 8px;
       padding: 0;
       border: none;
-      background: transparent;
       border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      appearance: none;
+      -webkit-appearance: none;
+    
       font-family: inherit;
       font-size: 13px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: normal;
       color: var(--primary-color);
       text-decoration: none;
       cursor: pointer;
     }
     
-    .view-all:hover {
+    .homepage-section .view-all:hover {
       color: var(--secondary-color);
+      background: transparent;
     }
 
     /* Dark mode overrides */
@@ -291,10 +299,17 @@
     <!-- News -->
     <div class="homepage-section">
       <h2>News</h2>
-      <ul class="news-list">
-        <li><span class="news-date">Month YYYY</span><span>A short news item describing a recent update, talk, or
-              milestone.</span></li>
+    
+      <ul id="news-list" class="news-list">
+        <li>
+          <span class="news-date">Month YYYY</span>
+          <span>A short news item describing a recent update, talk, or milestone.</span>
+        </li>
       </ul>
+    
+      <button id="toggle-news" class="view-all" type="button" aria-expanded="false">
+        View all news ↓
+      </button>
     </div>
 
     <!-- Selected Papers -->
