@@ -15,6 +15,42 @@ function closeOtherDetails(activeToggle) {
   });
 }
 
+// Homepage News toggle
+if (document.getElementById('news-list')) {
+  const list = document.getElementById('news-list');
+  const toggleButton = document.getElementById('toggle-news');
+
+  const newsItems = Array.from(list.children);
+  const initialCount = 3;
+  let expanded = false;
+
+  function renderHomepageNews() {
+    newsItems.forEach((item, index) => {
+      item.hidden = !expanded && index >= initialCount;
+    });
+
+    if (toggleButton) {
+      toggleButton.textContent = expanded
+        ? 'Show less ↑'
+        : 'View all news ↓';
+
+      toggleButton.setAttribute('aria-expanded', String(expanded));
+
+      // Hide button if there are no additional news items
+      toggleButton.hidden = newsItems.length <= initialCount;
+    }
+  }
+
+  renderHomepageNews();
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
+      expanded = !expanded;
+      renderHomepageNews();
+    });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   // Homepage: single selected papers list (preprints + conference papers, both filtered to isSelected)
   if (document.getElementById('selected-papers-list')) {
