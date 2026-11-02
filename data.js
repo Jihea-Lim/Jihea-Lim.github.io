@@ -188,11 +188,6 @@ const projects = [
 const getSelectedProjects = () => projects.filter(project => project.isSelected);
 const getAllProjects = () => projects;
 
-
-// Helper functions to filter projects
-const getSelectedProjects = () => projects.filter(project => project.isSelected);
-const getAllProjects = () => projects;
-
 // Research Experience Data - Replace with your own experience
 const researchExperience = [
   {
