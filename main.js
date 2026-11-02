@@ -21,7 +21,7 @@ if (document.getElementById('news-list')) {
   const toggleButton = document.getElementById('toggle-news');
 
   const newsItems = Array.from(list.children);
-  const initialCount = 3;
+  const initialCount = 2;
   let expanded = false;
 
   function renderHomepageNews() {
