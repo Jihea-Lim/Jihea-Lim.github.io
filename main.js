@@ -69,9 +69,9 @@ if (document.getElementById('projects-list')) {
   function renderHomepageProjects() {
     list.innerHTML = '';
 
-    const projectsToShow = expanded
-      ? getAllProjects()
-      : getSelectedProjects();
+   const projectsToShow = expanded
+    ? getAllProjects()
+    : getSelectedProjects().slice(0, 3);
 
     projectsToShow.forEach(project => {
       const li = document.createElement('li');
@@ -112,6 +112,51 @@ if (document.getElementById('projects-list')) {
     toggleButton.addEventListener('click', function() {
       expanded = !expanded;
       renderHomepageProjects();
+    });
+  }
+}
+
+  // Homepage Presentations toggle
+if (document.getElementById('presentations-list')) {
+  const list = document.getElementById('presentations-list');
+  const toggleButton = document.getElementById('toggle-presentations');
+
+  let expanded = false;
+
+  function renderHomepagePresentations() {
+    list.innerHTML = '';
+
+    const itemsToShow = expanded
+      ? presentations
+      : presentations.slice(0, 3);
+
+    itemsToShow.forEach(item => {
+      const li = document.createElement('li');
+
+      li.innerHTML = `
+        <strong>${item.title}</strong><br>
+        ${item.authors}<br>
+        <i>${item.venue}</i>, ${item.location}, ${item.year}
+      `;
+
+      list.appendChild(li);
+    });
+
+    if (toggleButton) {
+      toggleButton.textContent = expanded
+        ? 'Show less ↑'
+        : 'View all presentations ↓';
+
+      toggleButton.setAttribute('aria-expanded', String(expanded));
+    }
+  }
+
+  renderHomepagePresentations();
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
+      expanded = !expanded;
+      renderHomepagePresentations();
     });
   }
 }
