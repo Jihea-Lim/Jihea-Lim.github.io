@@ -276,6 +276,13 @@ const presentations = [
     location: "Incheon, South Korea",
     year: 2024
   },
+   {
+    title: "A Hybrid Active Noise Cancellation Algorithm for Suppressing Narrowband Noise with Rapidly Changing Frequencies",
+    authors: "<b>Jihea Lim</b>, Young-Sup Lee",
+    venue: "2023 Fall Conference of the Korean Society for Noise and Vibration Engineering (KSNVE)",
+    location: "Yeosu, South Korea",
+    year: 2023
+  }
   {
     title: "Active Road Noise Control Inside a Vehicle Cabin Using an Electronic Sound Generator Mounted on the Cowl Panel",
     authors: "Young-Sup Lee, <b>Jihea Lim</b>, Jeongwoo Kim",
