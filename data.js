@@ -282,7 +282,7 @@ const presentations = [
     venue: "2023 Fall Conference of the Korean Society for Noise and Vibration Engineering (KSNVE)",
     location: "Yeosu, South Korea",
     year: 2023
-  }
+  },
   {
     title: "Active Road Noise Control Inside a Vehicle Cabin Using an Electronic Sound Generator Mounted on the Cowl Panel",
     authors: "Young-Sup Lee, <b>Jihea Lim</b>, Jeongwoo Kim",
