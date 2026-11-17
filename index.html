@@ -132,10 +132,15 @@
           border-bottom: 1px solid #e5e7eb;
         }
     
-        .news-list {
-          list-style: none !important;
-          padding-left: 0 !important;
-          margin: 0 !important;
+        .news-date {
+         font-weight: 600;
+         color: #6b7280;
+         width: 120px;
+         flex-shrink: 0;
+        }
+        
+        .news-list li > span:not(.news-date) {
+         color: #1a1a1a;
         }
     
         .news-list li {
