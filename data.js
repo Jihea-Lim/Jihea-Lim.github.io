@@ -27,11 +27,10 @@ const publications = [
 */
 const publications = [
 
-    // Under Review
   {
     title: "Active Control of Outgoing Noise through a Room Opening",
     authors: "<b>Jihea Lim</b>, Young-Sup Lee",
-    venue: "Journal of Institute of Control, Robotics and Systems (Under Review)",
+    venue: "Journal of Institute of Control, Robotics and Systems (Accept)",
     links: [],
     isNew: false,
     isPreprint: false,
