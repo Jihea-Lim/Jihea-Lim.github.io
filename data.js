@@ -26,18 +26,7 @@ const publications = [
 ];
 */
 const publications = [
-
-  {
-    title: "Active Control of Outgoing Noise through a Room Opening",
-    authors: "<b>Jihea Lim</b>, Young-Sup Lee",
-    venue: "Journal of Institute of Control, Robotics and Systems (Accept)",
-    links: [],
-    isNew: false,
-    isPreprint: false,
-    isSelected: true
-  },
-
-      // Under Review
+     // Under Review
   {
     title: "Asynchronous Distributed Learning and Control Architecture for Real-Time Reinforcement Learning-Based Active Noise Control",
     authors: "<b>Jihea Lim</b>, Gwanggil Jeon",
@@ -48,6 +37,18 @@ const publications = [
     isSelected: true
   },
 
+
+  {
+    title: "Active Control of Outgoing Noise through a Room Opening",
+    authors: "<b>Jihea Lim</b>, Young-Sup Lee",
+    venue: "Journal of Institute of Control, Robotics and Systems (Accepted)",
+    links: [],
+    isNew: false,
+    isPreprint: false,
+    isSelected: true
+  },
+
+   
 
   {
     title: "A Feasibility Study of Deep Reinforcement Learning for Current Ripple Reduction in a Motor Drive System of an Electric Vehicle",
@@ -169,37 +170,43 @@ const projects = [
   },
   {
     title: "Reinforcement Learning-Based Current Ripple Reduction in Electric Vehicles",
-    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Mar 2024 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
+    description: "<b>Lead Researcher</b> · Industry Collaboration with Hyundai Motor Company (Mar 2024 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: true
   },
   {
     title: "Reinforcement Learning-Based Narrowband Active Noise Control",
-    description: "<b>Research Lead</b> · Academic Research (Feb 2024 – Mar 2025)<br>Developed a Deep Q-Network (DQN)-based control algorithm for narrowband active noise control.",
+    description: "<b>Lead Researcher</b> · Academic Research (Feb 2024 – Mar 2025)<br>Developed a Deep Q-Network (DQN)-based control algorithm for narrowband active noise control.",
     badges: [],
     isSelected: true
   },
   {
     title: "Active Noise Masking for Electric Vehicles",
-    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
+    description: "<b>Lead Researcher</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2026)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Noise Control for Electric Vehicles",
-    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2024 – Feb 2025)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
+    description: "<b>Lead Researcher</b> · Industry Collaboration with Hyundai Motor Company (Feb 2024 – Feb 2025)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
   {
     title: "Reinforcement Learning-Based Leak Localization in Underground Water Pipelines",
-    description: "<b>Research Lead</b> · Academic Research (Jan 2024 – May 2024)<br>Investigated the application of Deep Deterministic Policy Gradient (DDPG) to leak localization in underground water supply pipelines.",
+    description: "<b>Lead Researcher</b> · Academic Research (Jan 2024 – May 2024)<br>Investigated the application of Deep Deterministic Policy Gradient (DDPG) to leak localization in underground water supply pipelines.",
     badges: [],
     isSelected: false
   },
   {
     title: "Active Control for Traction Motor Switching Noise Reduction",
-    description: "<b>Research Lead</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2024)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
+    description: "<b>Lead Researcher</b> · Industry Collaboration with Hyundai Motor Company (Feb 2023 – Aug 2024)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
+    badges: [],
+    isSelected: false
+  },
+   {
+    title: "Deep Learning-Based Vehicle Sloshing Noise Classification",
+    description: "<b>Lead Researcher</b> · Industry Collaboration with Hyundai Motor Company (Apr 2021 – Oct 2021)<br>Further details are not publicly disclosed due to confidentiality restrictions.<br>Please contact me for additional information.",
     badges: [],
     isSelected: false
   },
@@ -215,6 +222,15 @@ const projects = [
     badges: [],
     isSelected: false
   }
+  ,
+ 
+{
+  title: "Autonomous Driving System Development",
+  description: "<b>15th Hyundai Motor Group Autonomous Driving Challenge</b> (Aug 2020 – Nov 2021)<br>Led local path planning and vehicle control development, supported localization algorithm development, and managed the overall project.<br>Developed and validated the autonomous driving system using IPG CarMaker simulations and implemented it on a Kia Niro EV for real-world driving tests in urban Seoul.",
+  badges: [],
+  isSelected: false
+}
+
 ];
 
 // Helper functions to filter projects
